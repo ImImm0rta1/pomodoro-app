@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- soft ground shadow -->
+    <path
+        android:fillColor="#33B5124A"
+        android:pathData="M32,86.2 a22,2.4 0 1,0 44,0 a22,2.4 0 1,0 -44,0 Z" />
+    <!-- pale full disc, visible only inside the missing wedge -->
+    <path
+        android:fillColor="#FFF8D3DF"
+        android:pathData="M27,58 a27,27 0 1,0 54,0 a27,27 0 1,0 -54,0 Z" />
+    <!-- main ring with a wedge cut out on the left (the break) -->
+    <path android:pathData="M54,58 L30.617,44.5 A27,27 0 1,1 30.617,71.5 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="31"
+                android:endX="54"
+                android:endY="85"
+                android:type="linear">
+                <item android:offset="0" android:color="#FFF5587F" />
+                <item android:offset="1" android:color="#FFC4124E" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- inner disc shadow -->
+    <path
+        android:fillColor="#38780A2C"
+        android:pathData="M37.5,60.4 a16.5,16.5 0 1,0 33,0 a16.5,16.5 0 1,0 -33,0 Z" />
+    <!-- inner disc -->
+    <path android:pathData="M37.5,58 a16.5,16.5 0 1,0 33,0 a16.5,16.5 0 1,0 -33,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="42"
+                android:startY="43"
+                android:endX="66"
+                android:endY="74"
+                android:type="linear">
+                <item android:offset="0" android:color="#FFFF6F92" />
+                <item android:offset="1" android:color="#FFE8325F" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- clock hands -->
+    <path
+        android:pathData="M51.5,60.5 L61.8,50.2 M54,58 L49,53"
+        android:strokeColor="#FFFFE3EA"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#FFFFE3EA"
+        android:pathData="M52.1,58 a1.9,1.9 0 1,0 3.8,0 a1.9,1.9 0 1,0 -3.8,0 Z" />
+    <!-- tomato leaves and stem -->
+    <path
+        android:fillColor="#FF3FBF74"
+        android:pathData="M54,32.5 C50.5,26.5 44,25 39.5,27.5 C44,29.5 49,31 54,32.5 Z" />
+    <path
+        android:fillColor="#FF3FBF74"
+        android:pathData="M54,32.5 C57.5,26.5 64,25 68.5,27.5 C64,29.5 59,31 54,32.5 Z" />
+    <path
+        android:fillColor="#FF2E9E5E"
+        android:pathData="M52.6,33 L52.6,24 Q52.6,22.6 54,22.6 Q55.4,22.6 55.4,24 L55.4,33 Z" />
+</vector>
